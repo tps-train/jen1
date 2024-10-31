@@ -4,8 +4,10 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'echo "About to build Java app"'
-        sh 'javac HelloWorld.java'
+        sh '''
+          echo "About to build Java app"
+          javac HelloWorld.java
+        '''
       }
     }
 
